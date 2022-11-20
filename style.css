@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url(./fonts/TTLakes-Black.eot);
+}
+body {
+    font-family: "TT Lakes", sans-serif;
+
+    min-width: 320px;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    padding-top: 24px;
+    background-color:#F8F8F8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 16px;
+
+    height: 88px;
+
+    border-bottom: 1px solid #D9FFF5;
+    
+}
+.header-menu {
+    display: flex;
+}
+
+.header-menu__burger {
+    margin-right: 16px;
+}
+
+.header-component {
+    display: flex;
+}
+
+.header-connect {
+    display: none;
+    margin-right: 24px;
+}
+
+.header-settings {
+    position: relative;
+}
+
+.header-settings::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -12px;
+
+    width: 2px;
+    height: 32px;
+
+    border-left: 2px solid #EAEAEA;
+    border-radius: 1px;
+}
+
+.content {
+    padding-top: 24;
+    background-color: #F8F8F8;;
+}
+
+.content-title {
+    position: relative;
+    margin: 0 0 24px 0;
+    padding-left: 12px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    
+    color: #1B1C21;
+}
+
+.content-title::before {
+    position: absolute;
+    content: "";
+
+    height: 100%;
+    width: 4px;
+    left: 0;
+    background-color: #41F6D7;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.content-services {
+    padding-left: 12px;
+}
+
+.content-services__list {
+    display: flex;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.content-services__list-item {
+    display: block;
+    padding: 8px;
+    white-space: nowrap;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.2px;
+
+    color: #7E7E82;
+
+    cursor: pointer;
+
+    border: 2px solid transparent;
+}
+
+.content-services__list-item:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.content-body__text {
+    padding: 0 16px;
+    margin-bottom: 16px;
+
+    height: 190px;
+    overflow: hidden;
+    
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.2px;
+
+    color: #1B1C21;
+}
+
+.content-body__alltext {
+    padding-left: 48px;
+    margin-bottom: 16px;
+    position: relative;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    color: #1B1C21;
+}
+.content-body__alltext::before {
+    position: absolute;
+    content: url(./img/icon.svg);
+    left: 16px;
+}
+.content-bod__img {
+    margin-bottom: 35px;
+    border-radius: 5px;
+}
+
+@media (min-width: 767px) {
+.header-connect {
+    display: flex;
+    }
+
+.header{
+    padding: 0 24px;
+    } 
+
+.header-menu__burger {
+    position: relative;
+    margin-right: 42px;
+    }
+
+.header-menu__burger::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -21px;
+    
+    width: 2px;
+    height: 32px;
+    
+    border-left: 2px solid #EAEAEA;
+    border-radius: 1px;
+    }  
+
+.content-body {
+    display: flex;
+}
+}
+
+@media (min-width: 1120px) {
+body {
+    padding-top: 42px;
+    
+}
+.hidden {
+    display: none;
+}
+
+.header-settings::before {
+    display: none;
+}
+
+.header {
+    height:0
+}
+
+.wide {
+    height: 130px;
+    width: 1096px;
+    left: 0px;
+    top: 42px; 
+    margin-bottom: 16px;
+}
+
+.content-title {
+    padding-left: 46px ;
+}
+
+.header-settings {
+    padding-top: 60px;
+    padding-left: 775px
+}
+
+.header-settings__repair {
+    position: relative;
+    margin-top: 40px;
+    margin-right: 210px;
+}
+
+.header-settings__repair::before {
+    content: "Оставить заявку";
+    position: absolute;
+    
+    width: 125px;
+    height: 24px;
+
+    font-size: 16px;
+
+    margin-left: -132px;
+
+    margin-top: 12px;
+    margin-bottom: 27px;
+
+    color: #1B1C21;
+}
+
+.header-search__chekstatus {
+    position: relative;
+}
+.header-search__chekstatus::before {
+    content: "Статус ремонта";
+    position: absolute;
+
+    width: 125px;
+    height: 24px;
+
+    font-size: 16px;
+
+    margin-left: -132px;
+
+    margin-top: 12px;
+    margin-bottom: 27px;
+    color: #1B1C21;
+}
+.content-services__list {
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-left: 30px;
+}
+
+.content-services__list-item {
+    margin-left: 20px;
+   
+}
+
+.content-body__text { 
+    margin-left: 34px;
+    height: 150px;
+    overflow: hidden;
+}
+
+}
