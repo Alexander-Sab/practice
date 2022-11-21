@@ -211,6 +211,7 @@ main {
 
 @media (min-width: 1120px) {
 body {
+    max-width: 1121px;
     padding-top: 42px;
     
 }
